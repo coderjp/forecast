@@ -1,0 +1,25 @@
+{
+    "name": "coderjp/forecast",
+    "description": "A Laravel package that generates a 5 day forecast for the given IP address",
+    "keywords": [
+        "forecast",
+        "weather",
+        "ip",
+        "geolocation"
+    ],
+    "homepage": "https://github.com/coderjp/forecast",
+    "autoload": {
+        "psr-4": {
+            "Coderjp\\Forecast\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jack Powell",
+            "homepage": "https://github.com/coderjp"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.5"
+    }
+}
