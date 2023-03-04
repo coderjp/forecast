@@ -21,5 +21,15 @@
     ],
     "require": {
         "guzzlehttp/guzzle": "^7.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Coderjp\\Forecast\\Providers\\ForecastProvider"
+            ],
+            "aliases": {
+                "Forecast": "Coderjp\\Forecast\\Facades\\Forecast"
+            }
+        }
     }
 }

@@ -10,6 +10,12 @@ Require this package with composer using the following command:
 composer require coderjp/forecast
 ```
 
+Publish the various resources needed
+
+```
+php artisan vendor:publish --provider="Coderjp\Forecast\Providers\ForecastProvider"
+```
+
 Run the migrations - this library stores all location and forecast data in the database.
 
 ```
@@ -32,8 +38,8 @@ By default, the library publishes a simple route to `/forecast`. This allows you
 
 All data is cached in the database. Two models are available for querying this data:
 
--   **`Coderjp\Forecast\Models\Forecast`** - Holds the location data
--   **`Coderjp\Forecast\Models\Day`** - Holds each day's forecast
+- **`Coderjp\Forecast\Models\Forecast`** - Holds the location data
+- **`Coderjp\Forecast\Models\Day`** - Holds each day's forecast
 
 ### CLI
 
