@@ -55,7 +55,6 @@ class OpenMeteo extends WeatherDriver
             $days = collect();
 
             for ($i = 0; $i < 5; $i++) {
-                // TODO - Check if we get < 5 days back
                 $date = $json['time'][$i];
                 $code = $json['weathercode'][$i];
                 $temperature = $json['temperature_2m_max'][$i];
